@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -26,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(toDoListAdapter);
 
     }
+
+//    public void onAddItem (View v) {
+//        EditText etNewItem = (EditText) findViewById(R.id.etNewItem);
+//        String itemText = etNewItem.getText().toString();
+//        etNewItem.setText("");
+//
+//    }
     
     public void onListItemClick(View listItem){
         Task task = (Task) listItem.getTag();

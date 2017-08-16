@@ -46,7 +46,14 @@ public class TodoListTest {
     @Test
     public void canAddTask(){
         taskstodo.addTask(task2);
-        assertEquals(1, taskstodo.taskCount());
+        assertEquals(5, taskstodo.taskCount());
+    }
+
+    @Test
+    public void canRemoveTask(){
+        taskstodo.addTask(task2);
+        taskstodo.removeTask(task2);
+        assertEquals(4, taskstodo.taskCount());
     }
 
 
