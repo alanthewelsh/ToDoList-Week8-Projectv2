@@ -19,6 +19,9 @@
         <activity android:name=".TodoActivity"
             android:label="Detailed Information"
             android:parentActivityName = ".MainActivity"></activity>
+        <activity android:name=".AddDataActivity"
+            android:label="Detailed Information"
+            android:parentActivityName = ".MainActivity"></activity>
     </application>
 
 </manifest>
