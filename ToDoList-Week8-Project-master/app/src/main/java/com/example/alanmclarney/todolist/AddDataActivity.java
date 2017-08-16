@@ -15,4 +15,6 @@ public class AddDataActivity extends AppCompatActivity {
         setContentView(R.layout.add_data);
 
     }
+
+
 }

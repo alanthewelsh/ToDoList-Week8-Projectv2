@@ -1,6 +1,8 @@
 package com.example.alanmclarney.todolist;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         TodoList todoList = new TodoList();
         ArrayList<Task> tasks = todoList.returnList();
 
-
+        SharedPreferences sharedPref = getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE);
 
         ToDoListAdapter toDoListAdapter = new ToDoListAdapter(this, tasks);
         ListView listView = (ListView) findViewById(R.id.lvItems);
