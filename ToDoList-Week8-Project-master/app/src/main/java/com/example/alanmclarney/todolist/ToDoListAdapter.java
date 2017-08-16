@@ -45,4 +45,14 @@ class ToDoListAdapter extends ArrayAdapter<Task> {
         return listItemView;
 
     }
+
+    public ArrayList<Task> getItems() {
+        ArrayList<Task> items = new ArrayList<>();
+
+        for(int i = 0; i < this.getCount(); i++) {
+            items.add(i, this.getItem(i));
+        }
+
+        return items;
+    }
 }
