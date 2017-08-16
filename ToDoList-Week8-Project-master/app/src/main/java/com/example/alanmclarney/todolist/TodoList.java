@@ -12,6 +12,10 @@ public class TodoList {
 
     public TodoList(){
         this.tasks = new ArrayList<Task>();
+        tasks.add(new Task("Shopping", "Go to the shops", 2));
+        tasks.add(new Task("Work", "Go to the Work", 1));
+        tasks.add(new Task("Pub", "Go to the pub", 3));
+
     }
 
 
@@ -37,6 +41,11 @@ public class TodoList {
     public void removeTask(Task task){
         tasks.remove(task);
     }
+
+    public ArrayList<Task> returnList(){
+        return new ArrayList<Task>(this.tasks);
+    }
+
 
 
 
